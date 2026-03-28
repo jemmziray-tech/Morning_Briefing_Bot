@@ -2,8 +2,8 @@ name: Morning Coffee Briefing
 
 on:
   schedule:
-    # 03:30 UTC is 06:30 EAT (Dar es Salaam time)
-    - cron: "30 3 * * *"
+    # 04:00 UTC is exactly 07:00 AM EAT (Tanzania time)
+    - cron: "0 4 * * *"
   workflow_dispatch: # Allows you to run it manually for testing
 
 jobs:
