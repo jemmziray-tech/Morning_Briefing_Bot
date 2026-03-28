@@ -70,9 +70,9 @@ if __name__ == "__main__":
     # 4. Grab Sports News (Pulling 3 headlines for Sports!)
     sports = fetch_rss_headlines("http://feeds.bbci.co.uk/sport/rss.xml", 3)
 
-    # 5. Grab BBC Learning English (6 Minute English Feed - Pulling just the latest 1)
-    bbc_english = fetch_rss_headlines(
-        "https://podcasts.files.bbci.co.uk/p02qtkki.rss", 1
+    # 5. Grab Tech News (Replacing the dead podcast link)
+    tech_news = fetch_rss_headlines(
+        "http://feeds.bbci.co.uk/news/technology/rss.xml", 2
     )
 
     # 6. Assemble the Master Briefing
@@ -88,8 +88,8 @@ if __name__ == "__main__":
         f"{bbc_africa}\n\n"
         f"⚽ **SPORTS ROUNDUP:**\n"
         f"{sports}\n\n"
-        f"📚 **BBC LEARNING ENGLISH:**\n"
-        f"Latest Lesson: \n{bbc_english}\n\n"
+        f"💻 **TECH UPDATES:**\n"
+        f"{tech_news}\n\n"
         f"Have a highly productive day in Tengeru! ☕🚀"
     )
 
